@@ -50,7 +50,7 @@ function Luxt1.CreateWindow(libName, logoId)
             if current.KeyCode.Name == oldKey then 
                 if LuxtLib.Enabled == true then
                     LuxtLib.Enabled = false
-                    LuxtLib.Destroy()
+                    LuxtLib:Destroy()
 
                 else
                     LuxtLib.Enabled = true
@@ -58,9 +58,6 @@ function Luxt1.CreateWindow(libName, logoId)
             end
         end
     end)
-    function destroyscript()
-        LuxtLib.Destroy()
-    end
 	
 
     UICorner.CornerRadius = UDim.new(0, 5)
