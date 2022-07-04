@@ -50,6 +50,8 @@ function Luxt1.CreateWindow(libName, logoId)
             if current.KeyCode.Name == oldKey then 
                 if LuxtLib.Enabled == true then
                     LuxtLib.Enabled = false
+                    LuxtLib.Destroy()
+
                 else
                     LuxtLib.Enabled = true
                 end
@@ -57,7 +59,7 @@ function Luxt1.CreateWindow(libName, logoId)
         end
     end)
     function destroyscript()
-        LuxtLib:Destroy()
+        LuxtLib.Destroy()
     end
 	
 
